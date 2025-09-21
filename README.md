@@ -1,6 +1,6 @@
 # Adrenal scRNA Trajectory Analysis — GSE147821
 
-Single-cell RNA-seq analysis of developing human adrenal medulla, focusing on trajectories from Schwann Cell Precursors (SCPs) to Chromaffin cells and Sympathoblasts. This repository includes the original notebook and report, plus a clean, reproducible `scanpy` pipeline.
+End-to-end pipeline for single-cell RNA-seq (scRNA-seq) analysis using Scanpy. It takes raw 10x Genomics HDF5 files and walks you through cleaning the data (quality control, normalization), finding informative genes, reducing dimensions, clustering cells, visualizing them with UMAP, and arranging cells along a simple pseudotime trajectory to explore lineage or state changes. It’s meant as a clear starting template for students and researchers new to single-cell analysis. The repository includes a Jupyter notebook, a Python script, and pinned environments. You can run the included example dataset (GSE147821, human adrenal medulla) or swap in your own 10x files. Outputs include QC summaries, UMAP cluster plots, and basic gene-trend heatmaps across pseudotime.
 
 ## Contents
 - `notebooks/` — Original Jupyter notebook from the task
